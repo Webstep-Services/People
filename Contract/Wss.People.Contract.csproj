@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Wss.People</RootNamespace>
+    <AssemblyName>Wss.People.Contract</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\CountryCodeToCountryName.json" />
+    <None Remove="Data\CountryCodeToPhoneCode.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\CountryCodeToCountryName.json" />
+    <EmbeddedResource Include="Data\CountryCodeToPhoneCode.json" />
+  </ItemGroup>
+
+</Project>
